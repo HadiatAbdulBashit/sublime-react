@@ -29,7 +29,7 @@ const Power = () => {
             <p className='max max-w-sm'>Our workflows are streamlined, optimised and built to perform.</p>
           </div>
           <div className='row-span-2 col-span-2'>
-            <img src={screen3} alt='screen3' className='w-3/4 mx-auto hover:scale-110 transition-all' />
+            <img src={screen3} alt='screen3' className='w-3/4 mx-auto hover:scale-110 transition-all drop-shadow-xl' />
           </div>
           <div className='flex flex-col gap-4'>
             <img src={icon11} alt='icon10' className='w-12' />

@@ -5,6 +5,7 @@ import Solution from "./components/solution";
 import Support from "./components/support";
 import Power from "./components/power";
 import Product from "./components/product";
+import Blog from "./components/blog";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Support />
       <Power />
       <Product />
+      <Blog />
     </>
   );
 }
