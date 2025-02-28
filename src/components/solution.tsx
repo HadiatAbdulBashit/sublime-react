@@ -17,6 +17,7 @@ import icon7 from "@/assets/img/icon/7.png";
 import icon8 from "@/assets/img/icon/8.png";
 import icon9 from "@/assets/img/icon/9.png";
 import screen2 from "@/assets/img/screen/2.png";
+import screen4 from "@/assets/img/screen/4.png";
 import people1 from "@/assets/img/people/1.png";
 
 const service = [
@@ -81,76 +82,70 @@ const Solution = () => {
         </div>
       </div>
       <BackgroundGradientAnimation>
-        <div className='w-screen h-full top-0 left-0 flex items-center py-24'>
-          <div className='container mx-auto w-full'>
-            <HoverEffect items={service} />
+        <div className='container mx-auto py-24'>
+          <HoverEffect items={service} />
+        </div>
+      </BackgroundGradientAnimation>
+      <BackgroundGradientAnimation>
+        <div className='container mx-auto grid grid-cols-2 items-center py-24'>
+          <div className='flex flex-col gap-4'>
+            <img src={icon8} alt='icon8' className='w-16' />
+            <p className='text-4xl max-w-sm'>Provide powerful solutions at all times.</p>
+            <p className='max-w-md'>
+              Use Sublime to streamline your processes, save time and effort and increase your sales exponentially.{" "}
+            </p>
+            <div className='flex gap-8'>
+              <div className='flex gap-2'>
+                <CheckIcon className='w-4' />
+                <p>On Demand Support</p>
+              </div>
+              <div className='flex gap-2'>
+                <CheckIcon className='w-4' />
+                <p>Seamless Cloud Technology</p>
+              </div>
+            </div>
+            <div>
+              <Button className='rounded-full w-auto pb-5 pt-4' variant={"outline"}>
+                Learn More
+                <BiRightArrowAlt className='mt-1' />
+              </Button>
+            </div>
+          </div>
+          <div>
+            <img src={screen2} alt='screen2' className='hover:scale-110 transition-transform' />
           </div>
         </div>
       </BackgroundGradientAnimation>
       <BackgroundGradientAnimation>
-        <div className='w-screen h-full top-0 left-0 flex items-center py-24'>
-          <div className='container mx-auto w-full grid grid-cols-2 items-center'>
-            <div className='flex flex-col gap-4'>
-              <img src={icon8} alt='icon8' className='w-16' />
-              <p className='text-4xl max-w-sm'>Provide powerful solutions at all times.</p>
-              <p className='max-w-md'>
-                Use Sublime to streamline your processes, save time and effort and increase your sales exponentially.{" "}
-              </p>
-              <div className='flex gap-8'>
-                <div className='flex gap-2'>
-                  <CheckIcon className='w-4' />
-                  <p>On Demand Support</p>
-                </div>
-                <div className='flex gap-2'>
-                  <CheckIcon className='w-4' />
-                  <p>Seamless Cloud Technology</p>
-                </div>
-              </div>
+        <div className='container mx-auto grid grid-cols-2 items-center gap-8 py-24'>
+          <div>
+            <img src={screen4} alt='screen4' className='hover:scale-110 transition-transform' />
+          </div>
+          <div className='flex flex-col gap-4'>
+            <img src={icon9} alt='icon8' className='w-16' />
+            <p className='text-4xl max-w-sm'>Provide powerful solutions at all times.</p>
+            <Card className='p-8 border-s-slate-50 shadow-none relative max-w-md'>
               <div>
-                <Button className='rounded-full w-auto pb-5 pt-4' variant={"outline"}>
-                  Learn More
-                  <BiRightArrowAlt className='mt-1' />
-                </Button>
+                <p className='italic'>
+                  "Sublime took our business to the next level. It provided the solution we were hunting for at an affordable price and was
+                  easy to integrate."
+                </p>
               </div>
-            </div>
-            <div>
-              <img src={screen2} alt='screen2' className='hover:scale-110 transition-transform' />
-            </div>
-          </div>
-        </div>
-      </BackgroundGradientAnimation>
-      <BackgroundGradientAnimation>
-        <div className='w-screen h-full top-0 left-0 flex items-center py-24'>
-          <div className='container mx-auto w-full grid grid-cols-2 items-center gap-8'>
-            <div>
-              <img src={screen2} alt='screen2' className='hover:scale-110 transition-transform' />
-            </div>
-            <div className='flex flex-col gap-4'>
-              <img src={icon9} alt='icon8' className='w-16' />
-              <p className='text-4xl max-w-sm'>Provide powerful solutions at all times.</p>
-              <Card className='p-8 border-s-slate-50 shadow-none relative max-w-md'>
+              <div className='flex gap-4 mt-4'>
+                <img src={people1} alt='people1' />
                 <div>
-                  <p className='italic'>
-                    "Sublime took our business to the next level. It provided the solution we were hunting for at an affordable price and
-                    was easy to integrate."
-                  </p>
+                  <p className='font-bold'>Sarah Smith</p>
+                  <p>Marketing Leader @Mailchimp</p>
                 </div>
-                <div className='flex gap-4 mt-4'>
-                  <img src={people1} alt='people1' />
-                  <div>
-                    <p className='font-bold'>Sarah Smith</p>
-                    <p>Marketing Leader @Mailchimp</p>
-                  </div>
-                </div>
-                <div className='bg-slate-100 absolute bottom-1 right-0 translate-y-1/2 w-20 h-20 rounded-full -z-[1]' />
-                <Button
-                  className='absolute w-10 bottom-0 right-0 -translate-x-10 transition-all hover:w-14 translate-y-full rounded-t-none'
-                  variant={"outline"}
-                >
-                  <BiRightArrowAlt />
-                </Button>
-              </Card>
-            </div>
+              </div>
+              <div className='bg-slate-100 absolute bottom-1 right-0 translate-y-1/2 w-20 h-20 rounded-full -z-[1]' />
+              <Button
+                className='absolute w-10 bottom-0 right-0 -translate-x-10 transition-all hover:w-14 translate-y-full rounded-t-none'
+                variant={"outline"}
+              >
+                <BiRightArrowAlt />
+              </Button>
+            </Card>
           </div>
         </div>
       </BackgroundGradientAnimation>
