@@ -2,9 +2,12 @@ import logo from "@/assets/img/logo.png";
 import logo1 from "@/assets/img/icon/1.png";
 import NavHeader from "./nav-header";
 import { Button } from "./ui/button";
-import { FaFacebook, FaPinterest, FaTelegram } from "react-icons/fa6";
+import { FaBurger, FaFacebook, FaPinterest, FaTelegram } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { useEffect, useState } from "react";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
+import { FaHamburger } from "react-icons/fa";
+import { MenuIcon } from "lucide-react";
 
 const Header = () => {
   const [navScroll, setNavScroll] = useState(false);
@@ -53,10 +56,38 @@ const Header = () => {
             <NavHeader />
           </nav>
           <div className='flex gap-4'>
-            <Button variant={"ghost"}>Sign In</Button>
-            <Button variant={"default"} className='rounded-full'>
+            <Button variant={"ghost"} className='hidden sm:block'>
+              Sign in
+            </Button>
+            <Button variant={"default"} className='rounded-full hidden sm:block'>
               Sign up for free
             </Button>
+            <Sheet>
+              <SheetTrigger className='lg:hidden'>
+                <Button variant={"outline"}>
+                  <MenuIcon />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side={"top"}>
+                <SheetHeader>
+                  <SheetTitle className='text-left'>Menu</SheetTitle>
+                  <SheetDescription></SheetDescription>
+                </SheetHeader>
+                <div className='flex flex-col gap-8 mt-8'>
+                  <a href='#'>Home</a>
+                  <a href='#'>Company</a>
+                  <a href='#'>Pricing</a>
+                  <a href='#'>Blog</a>
+                  <a href='#'>Contact</a>
+                  <a href='#' className='sm:hidden'>
+                    Sign in
+                  </a>
+                  <a href='#' className='sm:hidden'>
+                    Sign up for free
+                  </a>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </header>
