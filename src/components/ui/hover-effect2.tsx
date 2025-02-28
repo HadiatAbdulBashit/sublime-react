@@ -1,8 +1,6 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { Button } from "./button";
-import { TfiArrowTopRight } from "react-icons/tfi";
 
 export const HoverEffect2 = ({
   items,

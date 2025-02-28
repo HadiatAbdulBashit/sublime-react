@@ -2,11 +2,10 @@ import logo from "@/assets/img/logo.png";
 import logo1 from "@/assets/img/icon/1.png";
 import NavHeader from "./nav-header";
 import { Button } from "./ui/button";
-import { FaBurger, FaFacebook, FaPinterest, FaTelegram } from "react-icons/fa6";
+import { FaFacebook, FaPinterest, FaTelegram } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
-import { FaHamburger } from "react-icons/fa";
 import { MenuIcon } from "lucide-react";
 
 const Header = () => {
