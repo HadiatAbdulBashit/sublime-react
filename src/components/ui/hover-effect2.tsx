@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "./button";
 import { TfiArrowTopRight } from "react-icons/tfi";
 
-export const HoverEffect = ({
+export const HoverEffect2 = ({
   items,
   className,
 }: {
@@ -12,7 +12,6 @@ export const HoverEffect = ({
     icon: string;
     title: string;
     description: string;
-    link: string;
   }[];
   className?: string;
 }) => {
@@ -21,8 +20,7 @@ export const HoverEffect = ({
   return (
     <div className={cn("grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10", className)}>
       {items.map((item, idx) => (
-        <a
-          href={item?.link}
+        <div
           key={idx}
           className='relative group  block p-2 h-full w-full'
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -45,15 +43,12 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card className='group/card shadow-md'>
+          <Card className='shadow-md text-center'>
             <img src={item.icon} alt={item.title} />
-            <CardTitle className='text-2xl font-normal mt-8'>{item.title}</CardTitle>
+            <CardTitle className='text-2xl font-semibold mt-8'>{item.title}</CardTitle>
             <CardDescription className='mt-8 w-3/4'>{item.description}</CardDescription>
-            <Button className='rounded-full py-3 px-8 group-hover/card:-translate-y-1 mt-6 transition-all bg-slate-50' variant='outline'>
-              <TfiArrowTopRight className='mt-0.5' />
-            </Button>
           </Card>
-        </a>
+        </div>
       ))}
     </div>
   );
@@ -68,7 +63,7 @@ export const Card = ({ className, children }: { className?: string; children: Re
       )}
     >
       <div className='relative z-10'>
-        <div className='p-4'>{children}</div>
+        <div className='p-4 flex flex-col items-center'>{children}</div>
       </div>
     </div>
   );

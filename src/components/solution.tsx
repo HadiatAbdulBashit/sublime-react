@@ -5,9 +5,7 @@ import { Card } from "./ui/card";
 
 import { CheckIcon } from "lucide-react";
 import { GiFlowerStar } from "react-icons/gi";
-import { GoNorthStar } from "react-icons/go";
 import { TbNorthStar } from "react-icons/tb";
-import { TfiArrowTopRight } from "react-icons/tfi";
 import { BiRightArrowAlt } from "react-icons/bi";
 
 import icon2 from "@/assets/img/icon/2.png";
@@ -71,11 +69,9 @@ const Solution = () => {
           <div className='flex gap-20'>
             <p className='text-5xl'>Provide powerful solutions at all times.</p>
             <div className='flex flex-col justify-evenly'>
-              <div className='flex text-2xl'>
-                <TfiArrowTopRight />
+              <div className='flex text-2xl gap-4'>
                 <TbNorthStar />
                 <GiFlowerStar />
-                <GoNorthStar />
               </div>
               <p>
                 Supercharge your productivity and optimize your workflow with Sublime. Our intuitive interface and robust features for you
@@ -118,7 +114,7 @@ const Solution = () => {
               </div>
             </div>
             <div>
-              <img src={screen2} alt='screen2' />
+              <img src={screen2} alt='screen2' className='hover:scale-110 transition-transform' />
             </div>
           </div>
         </div>
@@ -127,7 +123,7 @@ const Solution = () => {
         <div className='w-screen h-full top-0 left-0 flex items-center py-24'>
           <div className='container mx-auto w-full grid grid-cols-2 items-center gap-8'>
             <div>
-              <img src={screen2} alt='screen2' />
+              <img src={screen2} alt='screen2' className='hover:scale-110 transition-transform' />
             </div>
             <div className='flex flex-col gap-4'>
               <img src={icon9} alt='icon8' className='w-16' />
