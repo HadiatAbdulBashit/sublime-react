@@ -1,8 +1,6 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { Button } from "./button";
-import { TfiArrowTopRight } from "react-icons/tfi";
 
 export const HoverEffect3 = ({
   items,
@@ -43,8 +41,8 @@ export const HoverEffect3 = ({
               />
             )}
           </AnimatePresence>
-          <Card className='shadow-md'>
-            <img src={item.icon} alt={item.title} className='w-full rounded-md' />
+          <Card className='shadow-md group/card'>
+            <img src={item.icon} alt={item.title} className='w-full rounded-md group-hover/card:scale-110 transition-transform' />
             <div className='p-4'>
               <p className='text-sm mt-4'>January 12, 2023</p>
               <CardTitle className='text-2xl font-semibold mt-4'>{item.title}</CardTitle>
@@ -59,12 +57,7 @@ export const HoverEffect3 = ({
 
 export const Card = ({ className, children }: { className?: string; children: React.ReactNode }) => {
   return (
-    <div
-      className={cn(
-        "rounded-2xl h-full w-full p-2 overflow-hidden bg-white border border-transparent dark:border-white/[0.2] relative z-20",
-        className
-      )}
-    >
+    <div className={cn("rounded-2xl h-full w-full p-2 overflow-hidden bg-white relative z-20", className)}>
       <div className='relative z-10'>{children}</div>
     </div>
   );

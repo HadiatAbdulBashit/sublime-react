@@ -8,6 +8,7 @@ import Product from "./components/product";
 import Blog from "./components/blog";
 import Testimonial from "./components/testimonial";
 import FreeTrial from "./components/free-trial";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Blog />
       <Testimonial />
       <FreeTrial />
+      <Footer />
     </>
   );
 }

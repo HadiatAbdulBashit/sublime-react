@@ -17,11 +17,11 @@ const FreeTrial = () => {
               <div className='flex gap-6 mt-4'>
                 <div className='flex gap-2 items-center'>
                   <FaCheckCircle />
-                  <p>On Demand Support</p>
+                  <p>Free 7-day trial</p>
                 </div>
                 <div className='flex gap-2 items-center'>
                   <FaCheckCircle />
-                  <p>Seamless Cloud Technology</p>
+                  <p>No credit card required</p>
                 </div>
               </div>
             </div>

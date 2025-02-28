@@ -34,7 +34,7 @@ const Testimonial = () => {
           <TbNorthStar className='text-3xl' />
         </div>
         <div className='columns-2 gap-8 max-w-4xl justify-center mx-auto mt-24'>
-          <Card className='h-full p-8 flex flex-col gap-8 bg-white/50 mb-8'>
+          <Card className='h-full p-8 flex flex-col gap-8 bg-white/50 mb-8 hover:scale-105'>
             <StarRating defaultValue={4} disabled={true} />
             <p className='italic'>
               "It’s intuitive, functional, easy-to-setup and presents content in an interactive and interesting way."
@@ -47,19 +47,19 @@ const Testimonial = () => {
               </div>
             </div>
           </Card>
-          <Card className='h-full p-8 flex flex-col gap-8 bg-white/50 my-8'>
+          <Card className='h-full p-8 flex flex-col gap-8 bg-white/50 my-8 hover:scale-105'>
             <StarRating defaultValue={4} disabled={true} />
             <p className='italic'>
               "It’s intuitive, functional, easy-to-setup and presents content in an interactive and interesting way."
             </p>
           </Card>
-          <Card className='h-full p-8 flex flex-col gap-8 bg-white/50 my-8'>
+          <Card className='h-full p-8 flex flex-col gap-8 bg-white/50 my-8 hover:scale-105'>
             <StarRating defaultValue={4} disabled={true} />
             <p className='italic'>
               "It’s intuitive, functional, easy-to-setup and presents content in an interactive and interesting way."
             </p>
           </Card>
-          <Card className='h-full p-8 flex flex-col gap-8 bg-white/50 mt-8'>
+          <Card className='h-full p-8 flex flex-col gap-8 bg-white/50 mt-8 hover:scale-105'>
             <StarRating defaultValue={4} disabled={true} />
             <p className='italic'>
               "It’s intuitive, functional, easy-to-setup and presents content in an interactive and interesting way."

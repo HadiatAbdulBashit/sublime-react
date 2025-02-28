@@ -4,8 +4,22 @@ import NavHeader from "./nav-header";
 import { Button } from "./ui/button";
 import { FaFacebook, FaPinterest, FaTelegram } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [navScroll, setNavScroll] = useState(false);
+
+  const changeNavBg = () => {
+    window.scrollY >= 2 ? setNavScroll(true) : setNavScroll(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavBg);
+    return () => {
+      window.removeEventListener("scroll", changeNavBg);
+    };
+  }, []);
+
   return (
     <>
       <div className='bg-black'>
@@ -32,7 +46,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <header className='sticky top-0 left-0 py-4 z-20 bg-white'>
+      <header className={`sticky top-0 left-0 py-4 z-20 bg-white ${navScroll ? "shadow" : "shadow-none"}`}>
         <div className='container flex justify-between mx-auto items-center'>
           <img src={logo} alt='Logo' className='h-10' />
           <nav className='hidden lg:block'>
