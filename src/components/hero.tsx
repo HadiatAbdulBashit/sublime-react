@@ -9,20 +9,20 @@ const Hero = () => {
     <div>
       <BackgroundGradientAnimation>
         <div className='w-screen h-full z-10 top-0 left-0 py-24'>
-          <div className='grid grid-cols-2 items-center container mx-auto h-full'>
+          <div className='grid grid-cols-1 md:grid-cols-2 items-center container mx-auto h-full'>
             <div className='flex flex-col gap-6'>
               <p className='text-gray-500 uppercase'>55,000+ trusted Businesses</p>
               <h2 className='text-7xl '>Build your next project faster.</h2>
               <p>Use Sublime to streamline your processes, save time and effort and increase your sales exponentially. </p>
               <div>
-                <div className='border border-gray-300 flex rounded-full w-1/2 items-center p-0.5 bg-white'>
+                <div className='border border-gray-300 flex rounded-full md:w-1/2 w-4/5 items-center p-0.5 bg-white'>
                   <Input className='rounded-l-full border-none' placeholder='Enter your mail address' />
                   <Button className='rounded-full px-4 py-6' size={"lg"}>
                     Get Started
                   </Button>
                 </div>
               </div>
-              <div className='flex gap-6'>
+              <div className='flex gap-x-6 flex-col sm:flex-row'>
                 <div className='flex gap-2 items-center'>
                   <FaCheckCircle />
                   <p>On Demand Support</p>
@@ -37,7 +37,7 @@ const Hero = () => {
               <img
                 src={screen1}
                 alt='screen'
-                className='absolute left-1/2 -translate-y-1/2 top-1/2 w-[100vw] scale-[2] max-w-96 drop-shadow-xl hover:scale-[2.1] transition-all'
+                className='absolute left-1/2 -translate-y-1/2 top-1/2 w-[100vw] scale-[2] max-w-96 drop-shadow-xl hover:scale-[2.1] transition-all hidden md:block'
               />
             </div>
           </div>

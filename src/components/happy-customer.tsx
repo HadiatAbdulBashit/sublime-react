@@ -4,7 +4,7 @@ const HappyCustomer = () => {
   return (
     <div className='container mx-auto my-12'>
       <Separator />
-      <div className='grid grid-cols-3 my-12'>
+      <div className='grid md:grid-cols-3 my-12 gap-y-12'>
         <div className='flex flex-col justify-evenly'>
           <p className='text-4xl'>15,000+ happy customers.</p>
           <p>Using Sublime everyday and loving it!</p>

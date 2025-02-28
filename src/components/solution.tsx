@@ -62,12 +62,12 @@ const service = [
 const Solution = () => {
   return (
     <>
-      <div className='container mx-auto my-24'>
+      <div className='container mx-auto mt-24'>
         <div>
           <p>SUBLIME PRODUCTS</p>
         </div>
         <div className='my-4'>
-          <div className='flex gap-20 justify-between'>
+          <div className='flex gap-20 justify-between flex-col md:flex-row'>
             <p className='text-5xl max-w-md'>Provide powerful solutions at all times.</p>
             <div className='flex flex-col justify-evenly'>
               <div className='flex text-2xl gap-4'>
@@ -87,7 +87,7 @@ const Solution = () => {
         </div>
       </BackgroundGradientAnimation>
       <BackgroundGradientAnimation>
-        <div className='container mx-auto grid grid-cols-2 items-center py-24'>
+        <div className='container mx-auto grid md:grid-cols-2 items-center py-24 gap-y-8'>
           <div className='flex flex-col gap-4'>
             <img src={icon8} alt='icon8' className='w-16' />
             <p className='text-4xl max-w-sm'>Provide powerful solutions at all times.</p>
@@ -117,7 +117,7 @@ const Solution = () => {
         </div>
       </BackgroundGradientAnimation>
       <BackgroundGradientAnimation>
-        <div className='container mx-auto grid grid-cols-2 items-center gap-8 py-24'>
+        <div className='container mx-auto grid md:grid-cols-2 items-center gap-8 py-24'>
           <div>
             <img src={screen4} alt='screen4' className='hover:scale-110 transition-transform' />
           </div>
@@ -132,7 +132,7 @@ const Solution = () => {
                 </p>
               </div>
               <div className='flex gap-4 mt-4'>
-                <img src={people1} alt='people1' />
+                <img src={people1} alt='people1' className='w-12' />
                 <div>
                   <p className='font-bold'>Sarah Smith</p>
                   <p>Marketing Leader @Mailchimp</p>

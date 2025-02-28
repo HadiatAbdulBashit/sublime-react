@@ -9,7 +9,7 @@ const Product = () => {
       <BackgroundGradientAnimation containerClassName='py-24'>
         <div className='my-4 container mx-auto'>
           <p className='text-base mb-4'>SUBLIME PRODUCTS</p>
-          <div className='flex gap-20 justify-between'>
+          <div className='flex gap-x-20 gap-y-8 justify-between flex-col md:flex-row'>
             <p className='text-5xl max-w-md'>Provide powerful solutions at all times.</p>
             <div className='flex flex-col justify-evenly'>
               <div className='flex text-2xl gap-4'>

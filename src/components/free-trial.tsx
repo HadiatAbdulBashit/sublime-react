@@ -9,7 +9,7 @@ const FreeTrial = () => {
     <BackgroundGradientAnimation>
       <div className='container mx-auto py-24'>
         <div className='my-4'>
-          <div className='flex gap-20 justify-between'>
+          <div className='flex gap-20 justify-between flex-col md:flex-row'>
             <div>
               <p className='text-6xl max-w-md'>
                 Start your <br /> 7-day free trial
@@ -30,8 +30,8 @@ const FreeTrial = () => {
                 <TbNorthStar />
                 <GiFlowerStar />
               </div>
-              <div className='flex gap-8'>
-                <Button size={"lg"} className='rounded-full h-full'>
+              <div className='flex gap-8 items-center'>
+                <Button size={"lg"} className='rounded-full h-full py-4'>
                   Learn More
                 </Button>
                 <div>

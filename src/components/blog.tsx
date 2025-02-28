@@ -28,7 +28,7 @@ const Blog = () => {
     <div>
       <BackgroundGradientAnimation containerClassName='py-24'>
         <div className='my-4 container mx-auto'>
-          <div className='flex gap-20 justify-between items-end'>
+          <div className='flex gap-x-20 justify-between gap-y-8 items-start md:items-end flex-col md:flex-row'>
             <p className='text-5xl max-w-md'>
               Most
               <br />

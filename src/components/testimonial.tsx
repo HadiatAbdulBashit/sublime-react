@@ -25,7 +25,7 @@ const Testimonial = () => {
   return (
     <BackgroundGradientAnimation>
       <div className='container mx-auto py-8'>
-        <div className='flex gap-8 justify-evenly items-center'>
+        <div className='flex md:gap-8 justify-evenly items-center'>
           <TbNorthStar className='text-3xl' />
           <div className='text-center'>
             <p className='uppercase text-black/60'>Our Testimonials</p>
@@ -33,7 +33,7 @@ const Testimonial = () => {
           </div>
           <TbNorthStar className='text-3xl' />
         </div>
-        <div className='columns-2 gap-8 max-w-4xl justify-center mx-auto mt-24'>
+        <div className='md:columns-2 gap-8 max-w-4xl justify-center mx-auto mt-24'>
           <Card className='h-full p-8 flex flex-col gap-8 bg-white/50 mb-8 hover:scale-105'>
             <StarRating defaultValue={4} disabled={true} />
             <p className='italic'>
@@ -77,7 +77,7 @@ const Testimonial = () => {
       <div className='container mx-auto flex flex-col justify-center text-center mb-12'>
         <p className='uppercase'>clients Using SUBLIME</p>
         <div className='flex gap-12 justify-center'>
-          <LogoCarousel logos={allLogos} columnCount={4} />
+          <LogoCarousel logos={allLogos} columnCount={3} />
         </div>
       </div>
     </BackgroundGradientAnimation>

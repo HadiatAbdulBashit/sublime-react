@@ -34,13 +34,13 @@ const Support = () => {
   return (
     <BackgroundGradientAnimation containerClassName='py-24'>
       <div className='container mx-auto py-24'>
-        <div className='flex gap-4 justify-evenly'>
+        <div className='flex gap-4 justify-evenly flex-col md:flex-row md:text-center items-center'>
           <div className='flex justify-center'>
             <img src={people3} alt={"people1"} className='w-20 rounded-full border-white border-4 shadow-sm shadow-white -ml-4' />
             <img src={people1} alt={"people1"} className='w-20 rounded-full border-white border-4 shadow-sm shadow-white -ml-4' />
             <img src={people2} alt={"people1"} className='w-20 rounded-full border-white border-4 shadow-sm shadow-white -ml-4' />
           </div>
-          <h2 className='text-4xl max-w-sm'>Powerful Customer Support</h2>
+          <h2 className='text-4xl max-w-sm text-center'>Powerful Customer Support</h2>
           <div className='flex text-2xl gap-4 items-end'>
             <PlusIcon />
             <TbNorthStar />
