@@ -74,7 +74,7 @@ const Testimonial = () => {
           </Card>
         </div>
       </div>
-      <div className='container mx-auto flex flex-col justify-center text-center'>
+      <div className='container mx-auto flex flex-col justify-center text-center mb-12'>
         <p className='uppercase'>clients Using SUBLIME</p>
         <div className='flex gap-12 justify-center'>
           <LogoCarousel logos={allLogos} columnCount={4} />

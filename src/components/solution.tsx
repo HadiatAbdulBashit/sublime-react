@@ -67,14 +67,14 @@ const Solution = () => {
           <p>SUBLIME PRODUCTS</p>
         </div>
         <div className='my-4'>
-          <div className='flex gap-20'>
-            <p className='text-5xl'>Provide powerful solutions at all times.</p>
+          <div className='flex gap-20 justify-between'>
+            <p className='text-5xl max-w-md'>Provide powerful solutions at all times.</p>
             <div className='flex flex-col justify-evenly'>
               <div className='flex text-2xl gap-4'>
                 <TbNorthStar />
                 <GiFlowerStar />
               </div>
-              <p>
+              <p className='max-w-xl'>
                 Supercharge your productivity and optimize your workflow with Sublime. Our intuitive interface and robust features for you
               </p>
             </div>
