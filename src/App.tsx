@@ -6,6 +6,7 @@ import Support from "./components/support";
 import Power from "./components/power";
 import Product from "./components/product";
 import Blog from "./components/blog";
+import Testimonial from "./components/testimonial";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Power />
       <Product />
       <Blog />
+      <Testimonial />
     </>
   );
 }
